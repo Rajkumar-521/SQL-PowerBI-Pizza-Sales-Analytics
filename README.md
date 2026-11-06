@@ -22,7 +22,7 @@ The goal of this project is to process raw transactional data using **SQL Server
 
 ## 📁 Dataset Included
 
-* **File Name:** `pizza_sales_excel_file.xlsx`[cite: 7]
+* **File Name:** `pizza_sales_excel_file.xlsx`
 * **Description:** Raw transactional dataset containing individual order records, pizza categories, sizes, prices, dates, and order times used for SQL querying and Power BI modeling.
 
 ---
