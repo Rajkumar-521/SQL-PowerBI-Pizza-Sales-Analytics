@@ -48,14 +48,25 @@ The goal of this project is to process raw transactional data using **SQL Server
 ## 🛠️ Technical Stack & Methods Used
 
 ### 1. Data Processing & Querying (SQL Server)
-- Developed SQL scripts utilizing `SUM()`, `COUNT(DISTINCT)`, `AVG()`, `DATEPART()`, and `GROUP BY` logic.
+- Developed SQL scripts utilizing SUM(), COUNT(DISTINCT), AVG(), DATEPART(), and GROUP BY logic.
 - Executed queries for KPI calculations, sales trend breakdown by day/month, and customer purchasing behaviors.
 
-```sql
--- Sample SQL Query: Total Revenue Calculation
-SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
+*Sample SQL Queries Executed:*
+- Total Revenue: `SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;`
+- Daily Trend: `SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders FROM pizza_sales GROUP BY DATENAME(DW, order_date);`
 
--- Sample SQL Query: Daily Trend for Total Orders
-SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
-FROM pizza_sales
-GROUP BY DATENAME(DW, order_date);
+### 2. Data Visualization & DAX (Power BI)
+- Built a multi-page interactive layout (Executive Home & Best/Worst Sellers).
+- Created dynamic DAX measures for real-time aggregation.
+- Applied interactive slicers for filtering by **Pizza Category** and **Month**.
+
+---
+
+## 🚀 How to Run This Project
+
+1. **SQL Database Setup:**
+   - Import the `pizza_sales.csv` dataset into SQL Server.
+   - Execute queries provided in `pizza_sales_queries.sql` to verify database KPIs.
+2. **Power BI Report:**
+   - Download the `Pizza_Sales_Analytics_Dashboard.pbix` file.
+   - Open in **Power BI Desktop** to view and interact with dynamic slicers.
