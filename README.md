@@ -22,11 +22,11 @@ The goal of this project is to process raw transactional data using **SQL Server
 
 ## 📊 Key Business Metrics (KPIs Implemented)
 
-* **Total Revenue:** $817.86K – Total money generated from sales across all pizza categories.
-* **Average Order Value (AOV):** $38.31 – Average spend per customer order.
-* **Total Pizzas Sold:** 49,574 units – Total volume of pizzas sold.
-* **Total Orders:** 21,350 – Total number of distinct customer orders recorded.
-* **Average Pizzas Per Order:** 2.32 – Average number of items contained in a single order.
+- **Total Revenue:** $817.86K – Total money generated from sales across all pizza categories.
+- **Average Order Value (AOV):** $38.31 – Average spend per customer order.
+- **Total Pizzas Sold:** 49,574 units – Total volume of pizzas sold.
+- **Total Orders:** 21,350 – Total number of distinct customer orders recorded.
+- **Average Pizzas Per Order:** 2.32 – Average number of items contained in a single order.
 
 ---
 
@@ -48,8 +48,8 @@ The goal of this project is to process raw transactional data using **SQL Server
 ## 🛠️ Technical Stack & Methods Used
 
 ### 1. Data Processing & Querying (SQL Server)
-* Developed SQL scripts utilizing `SUM()`, `COUNT(DISTINCT)`, `AVG()`, `DATEPART()`, and `GROUP BY` logic.
-* Executed queries for KPI calculations, sales trend breakdown by day/month, and customer purchasing behaviors.
+- Developed SQL scripts utilizing `SUM()`, `COUNT(DISTINCT)`, `AVG()`, `DATEPART()`, and `GROUP BY` logic.
+- Executed queries for KPI calculations, sales trend breakdown by day/month, and customer purchasing behaviors.
 
 ```sql
 -- Sample SQL Query: Total Revenue Calculation
